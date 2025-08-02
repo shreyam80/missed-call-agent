@@ -3,9 +3,10 @@
 
 This project is a **smart SMS-based order-taking assistant** for small restaurants. It simulates what happens when a customer calls, the restaurant misses the call, and the AI follows up via text to take the order conversationally — without needing an app, website, or human in the loop.
 
-> Built in **1 day** as a proof-of-concept to explore how AI can automate real-world workflows like missed call recovery, FAQ answering, and order finalization.
-
 ---
+## Why It Matters
+Missed calls = missed revenue. This AI assistant shows how natural language and automation can help small restaurants capture more orders without requiring an app or hiring extra staff.
+This project serves as a template adaptable to any small business use case (restaurant, private practice, salon, etc)
 
 ## Features
 
@@ -25,11 +26,11 @@ This project is a **smart SMS-based order-taking assistant** for small restauran
 - Politely prompts for anything missing
 - Waits for **explicit confirmation** before finalizing an order
 - Only finalizes orders when a structured block like this is present:
----
+
 Full Name: [name]
 Ordered Items: [items]
 Pickup Time: [time]
----
+
 
 
 - Prevents accidental order saves if the customer says "yes" too early
@@ -48,7 +49,7 @@ Pickup Time: [time]
 
 ---
 
-## 🧪 Try It Locally
+## Try It Locally
 
 1. **Clone the repo**
 2. Install dependencies:
@@ -58,12 +59,9 @@ Pickup Time: [time]
 3. Add your OpenAI key to a .env file:
 4. Run it!
 
-# Next Steps (Coming Soon)
+## Next Steps (Coming Soon)
 - Twilio Integration: Replace UI input with real incoming SMS
 - Menu Parsing: Auto-detect real menu items, modifiers, and allergens
 - Dynamic Hours & Menu: Load FAQ dynamically from a backend
 - Edit & Cancel Orders: Add logic for users to change/cancel orders post-confirmation
 - Automated Tests: Add unit tests for logic and parsing
-
-# Why It Matters
-Missed calls = missed revenue. This AI assistant shows how natural language and automation can help small restaurants capture more orders without requiring an app or hiring extra staff.
